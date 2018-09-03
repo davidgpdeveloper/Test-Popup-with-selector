@@ -12,6 +12,8 @@
 		957B66F2213DA5F0005AA5C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957B66F0213DA5F0005AA5C1 /* Main.storyboard */; };
 		957B66F4213DA5F1005AA5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957B66F3213DA5F1005AA5C1 /* Assets.xcassets */; };
 		957B66F7213DA5F1005AA5C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 957B66F5213DA5F1005AA5C1 /* LaunchScreen.storyboard */; };
+		957B66FF213DA6BE005AA5C1 /* PopupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B66FE213DA6BE005AA5C1 /* PopupVC.swift */; };
+		957B6701213DADAC005AA5C1 /* PopupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957B6700213DADAC005AA5C1 /* PopupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		957B66F3213DA5F1005AA5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		957B66F6213DA5F1005AA5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		957B66F8213DA5F1005AA5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		957B66FE213DA6BE005AA5C1 /* PopupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupVC.swift; sourceTree = "<group>"; };
+		957B6700213DADAC005AA5C1 /* PopupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		957B66EB213DA5F0005AA5C1 /* testPopupSelector */ = {
 			isa = PBXGroup;
 			children = (
+				957B66F8213DA5F1005AA5C1 /* Info.plist */,
 				957B66EC213DA5F0005AA5C1 /* AppDelegate.swift */,
+				957B66FE213DA6BE005AA5C1 /* PopupVC.swift */,
 				957B66EE213DA5F0005AA5C1 /* ViewController.swift */,
-				957B66F0213DA5F0005AA5C1 /* Main.storyboard */,
 				957B66F3213DA5F1005AA5C1 /* Assets.xcassets */,
 				957B66F5213DA5F1005AA5C1 /* LaunchScreen.storyboard */,
-				957B66F8213DA5F1005AA5C1 /* Info.plist */,
+				957B66F0213DA5F0005AA5C1 /* Main.storyboard */,
+				957B6700213DADAC005AA5C1 /* PopupCell.swift */,
 			);
 			path = testPopupSelector;
 			sourceTree = "<group>";
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957B66FF213DA6BE005AA5C1 /* PopupVC.swift in Sources */,
 				957B66EF213DA5F0005AA5C1 /* ViewController.swift in Sources */,
+				957B6701213DADAC005AA5C1 /* PopupCell.swift in Sources */,
 				957B66ED213DA5F0005AA5C1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

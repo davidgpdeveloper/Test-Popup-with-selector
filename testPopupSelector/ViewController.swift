@@ -10,14 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func actionButton(_ sender: UIButton) {actionButton()}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    private func actionButton() {
+        print("open popup button")
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "PopupVC") as! PopupVC
+        vc.view.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        //vc.filterAlertDelegate = self
+        self.addChildViewController(vc)
+        self.view.addSubview(vc.view)
     }
 
 
